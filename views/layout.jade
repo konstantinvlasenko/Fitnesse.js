@@ -2,9 +2,5 @@ html
   head
     link(rel="stylesheet", href="stylesheets/main.css")
   body
-    script(type='text/x-handlebars', data-template-name='application')
-      | Hello <b>{{name}}</b>
-    script(src='//code.jquery.com/jquery.min.js')
-    script(src='javascripts/handlebars-1.0.rc.1.js')
-    script(src='javascripts/ember-1.0.0-pre.2.min.js')
-    script(src='application.js')
+    section#todoapp
+    script(data-main='javascripts/app.js', src='javascripts/require/require.js')
